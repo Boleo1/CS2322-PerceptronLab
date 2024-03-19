@@ -1,2 +1,3 @@
 ﻿  Perceptron.cpp
+C:\dev\CS2322\PerceptronLab\PerceptronLab\Perceptron.cpp(56,10): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
   PerceptronLab.vcxproj -> C:\dev\CS2322\PerceptronLab\x64\Debug\PerceptronLab.exe
