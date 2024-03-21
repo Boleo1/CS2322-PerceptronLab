@@ -12,17 +12,23 @@ struct DataPoint {
 	int y;
 	int truth;
 
-	DataPoint(int x, int y, int truth) : x(x), y(y), truth(truth) {}
+	DataPoint(int x, int y, int truth)
+	{
+		this->x = x;
+		this->y = y;
+		this->truth = truth;
+	}
 };
 
 class Perceptron
 {
 public:
-	Perceptron();
+	Perceptron(double initialC1, double initialC2, double initialC3, double initialLearningRate);
 	void loadData(const string& filename);
 	int modelFunction(int x, int y);
 	void trainPerceptron();
 	void printResults();
+	int test(int gradeNum, int gradeDen);
 
 
 private:
